@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:8080/#/admin/create -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+
+	<link rel="stylesheet" type="text/css" href="./http___localhost_8080_#_admin_create is not available_files/bootstrap.css">
+	<link rel="stylesheet" href="./http___localhost_8080_#_admin_create is not available_files/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./http___localhost_8080_#_admin_create is not available_files/style.css">
+	
+<!-- LOAD ANGULAR BEFORE APP.JS FILE -->
+	<script src="./http___localhost_8080_#_admin_create is not available_files/angular.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/angular-ui-router.min.js"></script>
+
+<!-- SCRIPTS -->
+	<script src="./http___localhost_8080_#_admin_create is not available_files/app.js"></script>
+
+	<script src="./http___localhost_8080_#_admin_create is not available_files/post.srv.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/about.ctrl.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/admin.ctrl.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/blog.ctrl.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/create.ctrl.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/edit.ctrl.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/post.ctrl.js"></script>
+	<script src="./http___localhost_8080_#_admin_create is not available_files/manage.ctrl.js"></script>
+
+</head>
+<body ng-app="blogApp" class="ng-scope" data-pinterest-extension-installed="cr1.39.2">
+
+<!-- uiView: undefined --><ui-view class="ng-scope"><h3 class="ng-scope">Admin Panel</h3>
+	<ul class="ng-scope">
+
+		<li><a ui-sref="admin.create" href="http://localhost:8080/#/admin/create">Create Post</a></li>
+		<li><a ui-sref="admin.manage" href="http://localhost:8080/#/admin/manage">manage Post</a></li>		
+	</ul>
+
+<div class="ng-scope">
+<!-- uiView: undefined --><ui-view class="ng-scope"><div class="container ng-scope">
+
+<h2>Create New Post</h2>
+
+	<form class="ng-valid ng-dirty ng-valid-parse">
+		<label class="title">Title</label>
+		<input type="text" name="title" ng-model="ctrl.title" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Choose title Color</label>
+		<input type="text" name="color" ng-model="ctrl.color" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Post Number</label>
+		<input type="text" name="color" ng-model="ctrl.postnumber" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Date</label>
+		<input type="text" name="color" ng-model="ctrl.date" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Time</label>
+		<input type="text" name="color" ng-model="ctrl.time" class="ng-valid ng-touched ng-dirty ng-valid-parse">
+
+		<label class="title">Photo1</label>
+		<input type="text" name="color" ng-model="ctrl.photo1" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Caption : </label>
+		<input type="text" name="caption1" ng-model="ctrl.caption1" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Paragraph section 1 : </label>
+		<input type="text" name="para1" ng-model="ctrl.para1" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Quote : </label>
+		<input type="text" name="quote" ng-model="ctrl.quote" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Paragraph section 2 : </label>
+		<input type="text" name="para2" ng-model="ctrl.para2" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<label class="title">Photo2</label>
+		<input type="text" name="color" ng-model="ctrl.photo2" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+
+		<div ng-click="ctrl.createPost()"> click me when finished
+		</div>
+	</form>
+
+</div></ui-view>
+</div></ui-view>
+
+
+</body></html>

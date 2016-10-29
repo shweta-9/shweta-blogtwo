@@ -1,0 +1,20 @@
+{
+  "name": "shwetafinal",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "yes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "shweta sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.6",
+    "mongoose": "^4.5.9",
+    "multer": "^1.2.0"
+  }
+}

@@ -1,0 +1,31 @@
+<div class="container post-box">
+
+	<div class="mng-posts">
+		<div ng-repeat="item in ctrl.allPosts" class="row mng">
+			<div class="col-md-12 card-container">
+				<div class="col-md-1 spacingfix">
+					<div class="vertical-bar"></div>
+				</div>
+				
+				<div class="mng-img col-md-3">
+					<img class="img-thumb" ng-src="{{item.photo1}}">
+				</div>
+
+				<div class="mng-info col-md-8">
+					<div class="col-md-8 spacingfix">
+						<p class="mng-number">{{item.post_number}}</p>
+						<p class="mng-date">{{item.date}}</p>
+						<p class="mng-title">{{item.title | lowercase}}</p>
+					</div>
+				<!-- <div class="mng-options "> -->
+					<div class="mng-edit col-md-2">
+						<a ng-click="ctrl.editPost(item._id)">EDIT</a>
+					</div>
+
+					<div class="mng-del col-md-2" ng-click="ctrl.deletePost(item._id)">DELETE</div>
+				<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

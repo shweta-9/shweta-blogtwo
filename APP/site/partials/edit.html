@@ -1,0 +1,78 @@
+<div class="container post-box">
+
+	<form>
+			<div class="row createinfo">
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">title</h4>
+					<input type="text" name="title" ng-model="ctrl.title">
+				</div>
+
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">title color</h4>
+					<input colorpicker ng-model="ctrl.color"/>
+				</div>
+			</div>
+					
+			<div class="row">
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">post #</h4>
+					<input type="text" name="postnumber" ng-model="ctrl.post_number">
+				</div>
+
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">date</h4>
+					<input type="text" name="date" ng-model="ctrl.date">
+				</div>
+
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">time</h4>
+					<input type="text" name="time" ng-model="ctrl.time">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="formbox col-md-8">
+					<h4 class="titleshweta">tags</h4>
+					<input type="text" name="tags" ng-model="ctrl.tags">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">photo1</h4>
+					<input class="fileupload-choose" type="file" name="file" file-model="ctrl.file"> 
+					<div type="submit" class="submitbtn" ng-click="ctrl.uploadFile()">UPLOAD</div>
+				</div>
+
+				<div class="formbox col-md-4">
+					<h4 class="titleshweta">caption </h4>
+					<input type="text" name="caption1" ng-model="ctrl.caption1">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="formbox para1 ">
+					<h4 class="titleshweta">introduction</h4>
+					<textarea name="para1" cols="80" rows="5" ng-model="ctrl.para1"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="formbox col-md-8">
+					<h4 class="titleshweta">quote</h4>
+					<input type="text" name="quote" ng-model="ctrl.quote">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="formbox">
+					<h4 class="titleshweta">body</h4>
+					<textarea name="para2" cols="80" rows="5" ng-model="ctrl.para2"></textarea>
+				</div>
+			</div>
+
+		<div class="updatepost" ng-click="ctrl.update(ctrl.id)"> UPDATE
+		</div>
+
+	</form>
+</div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://rawgithub.com/bgrins/spectrum/master/spectrum.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://rawgithub.com/bgrins/spectrum/master/spectrum.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+<!-- LOAD ANGULAR BEFORE APP.JS FILE -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+
+<!-- SCRIPTS -->
+	<script src="app.js"></script>
+
+	<script src="site/services/post.srv.js"></script>
+	<script src="site/controllers/about.ctrl.js"></script>
+	<script src="site/controllers/admin.ctrl.js"></script>
+	<script src="site/controllers/blog.ctrl.js"></script>
+	<script src="site/controllers/create.ctrl.js"></script>
+	<script src="site/controllers/edit.ctrl.js"></script>
+	<script src="site/controllers/post.ctrl.js"></script>
+	<script src="site/controllers/manage.ctrl.js"></script>
+	<script src="site/controllers/nav.ctrl.js"></script>
+	<script src="site/controllers/searchResults.ctrl.js"></script>
+	<script src="site/directives/fileModel.js"></script>
+	<script src="site/directives/color.js"></script>
+
+</head>
+<body ng-app="blogApp" ng-controller="navCtrl as ctrl">
+	<nav>
+		<div class="nav-bar">
+			<a ui-sref="blog"><img class="logo" src="../assets/img/logo_white.png"></a>
+			
+			<div class="menu">
+				<div class="about">
+				<a class="nav-title" ui-sref="about">about</a>
+					<img class="nav-icon" src="../assets/img/info-icon.png">
+				</div>
+				<div class="search">
+				<button class="nav-title b" data-toggle="modal" data-target="#myModal">search</button>
+					<img class="nav-icon" src="../assets/img/search-icon.png">
+				</div>
+			</div>
+		</div>
+
+	</nav>
+
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="my-modal-container post-box">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		    <input class="searchbar" type="text" name="search" ng-model="ctrl.search" />
+		    <div ng-click="ctrl.searchAll();">search</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+
+
+	<ui-view></ui-view>
+
+
+	<footer>
+		<div id="wrapper">
+			<div id="header" class="footer">
+				<div id="content" class="footerbox">
+					<h5 class="copyright">© 2016 All content by Shweta unless otherwise stated.</h5>
+				</div>
+			</div>
+			<div id="footer">
+			
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>

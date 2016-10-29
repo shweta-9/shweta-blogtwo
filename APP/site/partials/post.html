@@ -1,0 +1,29 @@
+
+<div class="container post-box">
+	<div class="row">
+
+		<div class="infosection">
+			<p class="info number">{{ctrl.post.post_number}}</p>
+			<p class="info time">{{ctrl.post.time}}</p>
+			<p class="info date">{{ctrl.post.date}}</p>
+		</div>
+
+		<div class="post-header">
+			<h2 class="post-title" ng-style="{color: ctrl.post.color}">{{ctrl.post.title}}</h2>
+			<img class="post-img" ng-src="{{ctrl.post.photo1}}">
+			<p id="caption">{{ctrl.post.caption1}}</p>
+		</div>
+
+		<div class="post-body">
+			<div class="text-container">
+				<p class="post-para1">{{ctrl.post.para1}}</p>
+				<p class="post-quote">{{ctrl.post.quote}}</p>
+				<p class="post-para2">{{ctrl.post.para2}}</p>
+				<br>
+				<p class="post-tags">tags : {{ctrl.post.tags}}</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
