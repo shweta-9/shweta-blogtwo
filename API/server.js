@@ -28,7 +28,8 @@ var storage = multer.diskStorage({
 		callback(null, originalName + '-' + Date.now() + '.' + fileExtension);
 	}
 })
-var upload = multer({storage: storage}).any();
+// var upload = multer({storage: storage}).any();
+var upload = multer({storage: storage}).single();
 
 // var blog = require('./routes/blog.js');
 // var about = require('./routes/about.js');
