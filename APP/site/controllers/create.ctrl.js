@@ -71,7 +71,7 @@
 				})
 				.then(function(res) {
 					console.log(res.data[0].path);
-					var pathToImage = res.data.path.slice(3);
+					var pathToImage = res.data[0].path.slice(3);
 					createVm.photo1 = pathToImage;
 					console.log('successfully uploaded file');
 				})
