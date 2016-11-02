@@ -70,7 +70,7 @@
 					headers: {'Content-Type': undefined}
 				})
 				.then(function(res) {
-					console.log(res.data.path);
+					console.log(res.data);
 					var pathToImage = res.data.path.slice(3);
 					createVm.photo1 = pathToImage;
 					console.log('successfully uploaded file');
