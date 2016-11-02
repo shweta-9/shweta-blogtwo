@@ -168,7 +168,7 @@ app.delete('/:objectId',  function(req,res) {
 
 app.post('/upload', function(req, res) {
 	upload(req, res, function(err) {
-		console.log(req.files);
+		console.log(req.files[0]);
 		if (err) {
 			res.send(err);
 			console.log(err);
