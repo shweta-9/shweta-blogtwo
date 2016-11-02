@@ -29,8 +29,8 @@ var storage = multer.diskStorage({
 	}
 })
 
-var upload = multer({storage: storage}).any();
-// var upload = multer({storage: storage}).single();
+// var upload = multer({storage: storage}).any();
+var upload = multer({storage: storage}).single();
 
 // var blog = require('./routes/blog.js');
 // var about = require('./routes/about.js');
