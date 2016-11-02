@@ -29,8 +29,8 @@ var storage = multer.diskStorage({
 	}
 })
 
-// var upload = multer({storage: storage}).any();
-var upload = multer({storage: storage}).single();
+var upload = multer({storage: storage}).any();
+// var upload = multer({storage: storage}).single();
 
 // var blog = require('./routes/blog.js');
 // var about = require('./routes/about.js');
@@ -154,14 +154,27 @@ app.delete('/:objectId',  function(req,res) {
 
 
 
+// app.post('/upload', function(req, res) {
+// 	upload(req, res, function(err) {
+// 		console.log(req.file[0].path);
+// 		if (err) {
+// 			res.send(err);
+// 			console.log(err);
+// 		}
+// 		res.json(req.files[0]);
+// 	});
+// });
+
+
 app.post('/upload', function(req, res) {
 	upload(req, res, function(err) {
-		console.log(req.file[0].path);
+		console.log(req.files);
 		if (err) {
 			res.send(err);
 			console.log(err);
+		} else {
+			res.json(req.files);
 		}
-		res.json(req.files[0]);
 	});
 });
 
