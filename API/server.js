@@ -18,7 +18,7 @@ var multer = require('multer');
 //MULTER file uploading
 var storage = multer.diskStorage({
 	destination: function(req, file, callback) {
-		callback(null, './APP/uploads');
+		callback(null, '../APP/uploads');
 	},
 	filename: function(req, file, callback) {
 		var originalName = file.originalname;
