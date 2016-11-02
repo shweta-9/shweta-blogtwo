@@ -60,7 +60,7 @@
 				})
 				.then(function(res) {
 					console.log(res.data.path);
-					var pathToImage = res.data.path.slice(3);
+					var pathToImage = res.data[0].path.slice(6);
 					editVm.photo1 = pathToImage;
 					console.log('successfully uploaded file');
 				})
