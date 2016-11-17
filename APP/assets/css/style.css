@@ -193,7 +193,7 @@ SINGLE POSTS
 .post-box {
 	margin: 0 auto;
 	display: block;
-	width: 70%;
+	width: 70vw;
 /*	padding: none !important;*/
 	padding-top: 90px;
 	padding-bottom: 40px;
@@ -263,16 +263,16 @@ SINGLE POSTS
 
 .post-quote {
 	font-family: Bajern;
-	font-size: 50px;
+	font-size: 3.6em;
 	color: black;
 	text-align: center;
 	margin-bottom: 40px;
 	margin-top: 30px;
-	line-height: 45px;
+	line-height: 1em;
 }
 
 .post-para1 {
-	font-size: 16px;
+	font-size: 1.2em;
 	letter-spacing: 0.5px;
 	font-family: Inconsolata;
 }
@@ -615,12 +615,21 @@ footer{
 	color: white;
 }
 
+.credit {
+	text-align: left;
+	display: inline-block;
+	font-family: KarlaReg;
+	font-size: 12px;
+	color: #B0F2E8;
+}
+
 .copyright {
 	margin: 0px;
 	text-align: right;
 	font-family: KarlaReg;
-	font-size: 10px;
+	font-size: 12px;
 	color: #B0F2E8;
+	display: inline-block;
 }
 
 .aboutpg {
@@ -638,8 +647,10 @@ footer{
 
 @media only screen and (max-width:470px) {
 	html {
-		font-size: 78%;
+		font-size: 80%;
 	}
+
+
 }
 
 
