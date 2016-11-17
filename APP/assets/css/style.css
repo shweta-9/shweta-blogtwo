@@ -618,6 +618,9 @@ footer{
 .copyright {
 	margin: 0px;
 	text-align: right;
+	font-family: KarlaReg;
+	font-size: 10px;
+	color: #B0F2E8;
 }
 
 .aboutpg {
@@ -632,6 +635,12 @@ footer{
 /*body {
 	cursor: url(../img/cool-cursor.gif), auto; 
 }*/
+
+@media only screen and (max-width:470px) {
+	html {
+		font-size: 78%;
+	}
+}
 
 
 
