@@ -163,9 +163,6 @@ nav {
 	padding-top: 2%;
 }
 
-.nav-title path {
-
-}
 
 .nav-search:hover {
 	color: blue
@@ -192,6 +189,7 @@ nav div img:hover {
 .nav-icon {
     width: 28%;
     padding-top: 50%;
+    margin-left: 71%;
 }
 
 svg path:hover {
@@ -743,9 +741,6 @@ footer{
 		width: 100%;
 	}
 
-	.main-thumb:hover + .main-title{
-		display: block;
-}
 
 	.post-box {
 		padding-top: 105px;
@@ -822,9 +817,6 @@ footer{
 		width: 100%;
 	}
 
-	.main-thumb:hover + .main-title{
-		display: block;
-}
 
 	.post-box {
 		padding-top: 105px;
