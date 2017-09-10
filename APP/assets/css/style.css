@@ -838,12 +838,20 @@ footer{
 	}
 
 	.post-quote {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 	.post-title {
-		font-size: 65px;
+		font-size: 37px;
 	}
+
+	.text-container {
+		border: none;
+		border-style: none;
+		padding: 0px;
+	}
+
+
 }
 
 
